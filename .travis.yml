@@ -7,13 +7,14 @@ node_js:
 cache:
   directories:
     - "node_modules"
+    - "semantic"
 
 install:
   - npm install
   - npm run build-semantic
 
 script:
-  - ng build
+  - ng build --progress=false
 
 notifications:
   email: false
