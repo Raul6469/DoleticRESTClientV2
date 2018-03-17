@@ -9,11 +9,11 @@ cache:
     - "node_modules"
 
 install:
-- npm install
-- npm run build-semantic
+  - npm ci
+  - npm run build-semantic
 
 script:
-- ng build
+  - ng build
 
 notifications:
   email: false
